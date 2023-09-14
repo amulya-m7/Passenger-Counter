@@ -11,9 +11,19 @@ function increment() {
     countEl.innerText = count
 }
 
+function decrement() {
+    count -= 1
+    countEl.innerText = count
+}
+
 function save() {
     let saved = " " + count + " -"
     saveEl.textContent += saved
+    countEl.textContent = 0
+    count = 0
+}
+
+function reset() {
     countEl.textContent = 0
     count = 0
 }
